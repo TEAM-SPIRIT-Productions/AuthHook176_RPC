@@ -35,11 +35,11 @@ bool Hook_CreateMutexA(bool bEnable)
 
 	decltype(&CreateMutexA) Hook = [](LPSECURITY_ATTRIBUTES lpMutexAttributes, BOOL bInitialOwner, LPCSTR lpName) -> HANDLE
 	{
-		//if (lpName && !strcmp(lpName, "WvsClientMtx"))
-		//{
-		//	Log("MultiClient: Faking %s", lpName);
-		//	return (HANDLE)0xBADF00D;
-		//}
+		if (lpName && !strcmp(lpName, "WvsClientMtx"))
+		{
+			Log("MultiClient: Faking %s", lpName);
+			return (HANDLE)0xBADF00D;
+		}
 
 		return _CreateMutexA(lpMutexAttributes, bInitialOwner, lpName);
 	};
