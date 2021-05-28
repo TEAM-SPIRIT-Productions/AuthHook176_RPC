@@ -44,7 +44,7 @@ void StartRPC() {
 	activity.GetAssets().SetLargeImage("spiritlogo");
 	activity.GetAssets().SetSmallImage("spiritbanner");
 	activity.GetAssets().SetLargeText("Spirit");
-	activity.GetAssets().SetSmallText("A calm day in Spirit."); \
+	activity.GetAssets().SetSmallText("A calm day in Spirit.");
 	core->ActivityManager().UpdateActivity(activity, [](discord::Result result) {
 	// Do something with results here
 	});
