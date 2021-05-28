@@ -35,3 +35,4 @@ This repository adds Discord Rich Presence support. The open source version of t
         8. Click apply and you should be good to go!
 - Discord RPC not working when I launch game
     - You may be missing a dll file in your game folder (maplestory game folder). Add ``discord_game_sdk.dll`` found in your ``lib\x86`` directory into your maplestory game files.
+    - If you aren't missing a dll, it might just take a second for the RPC to load on initial launch, so be patient!
