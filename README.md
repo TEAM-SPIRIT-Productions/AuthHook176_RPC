@@ -42,5 +42,7 @@ Meaning you cannot show your in-game Character's stats (I.E. Level, Map, Job).
     - You may be missing a dll file in your game folder (maplestory game folder). Add ``discord_game_sdk.dll`` found in your ``lib\x86`` directory into your maplestory game files.
     - If you aren't missing a dll, it might just take a second for the RPC to load on initial launch, so be patient!
 
-- Game does not launch if I don't have Discord Open!
-    - Unfortunately, even with ``NoRequireDiscord`` CreateFlag, it seems the game won't launch if you don't have discord open! Currently no solution to fixing this problem yet, stay tuned
+- ~~Game does not launch if I don't have Discord Open!~~
+    - ~~Unfortunately, even with ``NoRequireDiscord`` CreateFlag, it seems the game won't launch if you don't have discord open! Currently no solution to fixing this problem yet, stay tuned~~
+   
+    -Fixed as of commit [``c5a935aa91e3956b22a7d9377be05ea027d74762``](https://github.com/TEAM-SPIRIT-Productions/AuthHook176_RPC/commit/c5a935aa91e3956b22a7d9377be05ea027d74762)
