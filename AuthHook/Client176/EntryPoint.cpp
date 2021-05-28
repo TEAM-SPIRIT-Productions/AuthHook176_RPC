@@ -44,10 +44,10 @@ void StartRPC() {
 	activity.GetAssets().SetLargeImage("spiritlogo");
 	activity.GetAssets().SetSmallImage("spiritbanner");
 	activity.GetAssets().SetLargeText("Spirit");
-	activity.GetAssets().SetSmallText("A calm day in Spirit.");
+	activity.GetAssets().SetSmallText("A calm day in Spirit."); \
 	core->ActivityManager().UpdateActivity(activity, [](discord::Result result) {
-		// Do something with results here
-		});
+	// Do something with results here
+	});
 	while (true) {
 		Sleep(3000); // Update every 3 second
 		::core->RunCallbacks();
@@ -60,7 +60,8 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
 	{
 		DisableThreadLibraryCalls(hinstDLL);
 		CreateThread(NULL, NULL, (LPTHREAD_START_ROUTINE)&MainProc, NULL, NULL, NULL);
-		CreateThread(NULL, NULL, (LPTHREAD_START_ROUTINE)&StartRPC, NULL, NULL, NULL);
+		if (FindWindowA(NULL, "Discord") != NULL)
+			CreateThread(NULL, NULL, (LPTHREAD_START_ROUTINE)&StartRPC, NULL, NULL, NULL);
 	}
 	else if (fdwReason == DLL_PROCESS_DETACH)
 	{
