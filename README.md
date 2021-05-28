@@ -12,9 +12,13 @@ Launched via the following...
 
 ## Notes:
 This repository is a fork of [Client176](https://github.com/RajanGrewal/Client176) created by [RajanGrewal](https://github.com/RajanGrewal).
-This repository adds Discord Rich Presence support. The open source version of this Repo currently doesn't provide support for in-game information relay. Meaning you cannot show your in-game Character's stats (I.E. Level, Map, Job).
 
-## Discord RPC Config
+This repository adds Discord Rich Presence support. 
+The open source version of this Repo currently doesn't provide support for in-game information relay. 
+
+Meaning you cannot show your in-game Character's stats (I.E. Level, Map, Job).
+
+## Discord RPC Config (IMPORTANT)
 1. Changing the client id. Navigate to ``Global.h`` and change ``RPC_CLIENT_ID`` to your desired client ID.
     - For more info on how to get a Discord RPC Client ID. Please naviate to the [Discord Developer Portal](https://discord.com/developers/docs/intro)
     - This is not a tutorial on how to setup Discord Specific APIs
