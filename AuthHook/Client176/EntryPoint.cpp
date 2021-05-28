@@ -36,7 +36,7 @@ DWORD WINAPI MainProc(PVOID)
 }
 
 void StartRPC() {
-	auto result = discord::Core::Create(RPC_CLIENT_ID, DiscordCreateFlags_Default, &core);
+	auto result = discord::Core::Create(RPC_CLIENT_ID, DiscordCreateFlags_NoRequireDiscord, &core);
 	discord::Activity activity{};
 	activity.SetDetails("Currently Grinding SpiritMS");
 	activity.SetState("Bera");
