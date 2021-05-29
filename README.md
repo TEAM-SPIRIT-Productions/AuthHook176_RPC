@@ -10,6 +10,9 @@ Launched via the following...
 
     MapleStory.exe GameLaunching 8.31.99.141 8484
 
+## Gallery
+![SpiritMS](https://media.discordapp.net/attachments/631249406775132182/848053274606436392/1c73723041ce0f3e18de43abb6a5526b.png)
+
 ## Notes:
 This repository is a fork of [Client176](https://github.com/RajanGrewal/Client176) created by [RajanGrewal](https://github.com/RajanGrewal).
 
