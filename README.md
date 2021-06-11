@@ -48,4 +48,4 @@ Meaning you cannot show your in-game Character's stats (I.E. Level, Map, Job).
 - ~~Game does not launch if I don't have Discord Open!~~
     - ~~Unfortunately, even with ``NoRequireDiscord`` CreateFlag, it seems the game won't launch if you don't have discord open! Currently no solution to fixing this problem yet, stay tuned~~
    
-    -Seldom fixed as of commit [``c5a935aa91e3956b22a7d9377be05ea027d74762``](https://github.com/TEAM-SPIRIT-Productions/AuthHook176_RPC/commit/c5a935aa91e3956b22a7d9377be05ea027d74762). From testing, it seems it is very inconsistent, stay tuned for a more concrete fix to this issue. If you want it to work 100% of the time please remove the FindWindowA() check in ``EntryPoint.cpp``
+    -Seldom fixed as of commit [``c5a935aa91e3956b22a7d9377be05ea027d74762``](https://github.com/TEAM-SPIRIT-Productions/AuthHook176_RPC/commit/c5a935aa91e3956b22a7d9377be05ea027d74762). From testing, it might be inconsistent, stay tuned for a more concrete fix to this issue. If you want it to work 100% of the time please remove the FindWindowA() check in ``EntryPoint.cpp``
